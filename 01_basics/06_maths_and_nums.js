@@ -11,9 +11,9 @@ console.log(anotherNum.toPrecision(3));
 
 const Number = 153.56
 
-// console.log(Math);
-// console.log(Math.round(Number));
-// console.log(Math.abs(-100));
-// console.log(Math.min(4,3,2,1));
-// console.log(Math.max(4,3,2,1));
+console.log(Math);
+console.log(Math.round(Number));
+console.log(Math.abs(-100));
+console.log(Math.min(4,3,2,1));
+console.log(Math.max(4,3,2,1));
 console.log(Math.random());
