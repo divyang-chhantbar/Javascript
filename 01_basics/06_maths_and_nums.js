@@ -17,3 +17,8 @@ console.log(Math.abs(-100));
 console.log(Math.min(4,3,2,1));
 console.log(Math.max(4,3,2,1));
 console.log(Math.random());
+
+const min = 10
+const max = 20
+
+console.log(Math.random() * (max-min+1));
