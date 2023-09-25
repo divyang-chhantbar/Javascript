@@ -19,7 +19,7 @@ map.set('IN', "India")
 
 // console.log(map);
 
-for (const [key, value] /* due to this qarrqay get destructure */ of map) {
+for (const [key, value] /* due to this array get destructure */ of map) {
     // console.log(key, ':-', value);
 }
 
