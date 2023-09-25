@@ -2,7 +2,6 @@
  // basic syntax 
  //for (let index = 0 (initialization) ; index < array.length (condition); index++(updation)) {
    // const element = array[index];
-    
  //}
 
 for (let i = 0; i <= 10; i++) {
