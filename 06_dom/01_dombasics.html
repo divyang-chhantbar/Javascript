@@ -1,0 +1,43 @@
+<!-- IN AND OUT ABOUT "DOM"
+The DOM stands for the Document Object Model, and it's a way for web developers to interact with and manipulate web pages using JavaScript. It's a structured representation of a web page, turning it into a tree-like structure of objects that you can access and modify. The DOM is crucial because it allows you to dynamically change and update web content without having to reload the entire page.
+
+How can we access and manipulate these elements in the DOM?
+start with the "document" object, which represents the entire web page. From there, you can navigate through the tree structure to find the element you want, using methods like getElementById, querySelector, or getElementsByClassName. Once you've selected an element, you can change its content, style, or attributes using JavaScript.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1  id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!-- for accessing elements getElementsById with that getAttributes and setAttributes both can be used 
+innertext , innerHTML , textContent these three shows different items
+1st will show only outer text to diplay
+2nd will show everyhtml in that text
+3rd will show hidden text too . -->
