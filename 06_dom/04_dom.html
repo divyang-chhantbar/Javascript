@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Aur Code</title>
+</head>
+<body style="background-color: grey;color : #ffff">
+    <ul class = "language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    //  here we have added the element in to the list using function but its not optimised if the input is more , more traversal will happen which will cause increase in space and time complexity .
+    function addlanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addlanguage("python")
+    addlanguage("cpp")
+    addlanguage("java")
+
+    // here is the optimised :
+    function addOptlanguage(langName){
+        const li = document.createElement('li');
+       li.appendChild(document.createTextNode(langName))
+       document.querySelector('.language').appendChild(li)
+    }
+    addOptlanguage("python")
+    addOptlanguage("cpp")
+    addOptlanguage("java")
+
+        // Edit 
+        const seclang = document.querySelector("li : nth-child(2)")
+        // seclang.innerHTML = "Golang" (Again not that optimised)
+        const newli = document.createElement('li')
+        newli.appendChild(document.createTextNode("Golang"))
+        seclang.replaceWith(newli)
+
+        // Remove
+        const removelast = document.querySelector("li : last-child")
+        removelast.remove()
+
+</script>
+</html>
