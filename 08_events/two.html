@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Aur Code </title>
+</head>
+<body>  
+    <h1>Chai Aur Code</h1>
+    <button id ='start' style="background-color: grey;">Start</button>
+    <button id ='stop' style="background-color: grey;">Stop</button>
+</body>
+<script>
+    const sayDivyang = function(){
+        console.log("Divyang");
+    };
+    document.querySelector('h1').innerHTML = 'Best JS series'
+    document.querySelector('#start').addEventListener('click',function(e) {
+        setTimeout(sayDivyang,5000);
+        console.log("Started");
+    });
+    document.querySelector('#stop').addEventListener('click',function(e) {
+        clearTimeout(sayDivyang,2000);
+        console.log("Stopped");
+    })
+</script>
+</html>
