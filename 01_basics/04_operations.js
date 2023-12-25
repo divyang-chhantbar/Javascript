@@ -14,7 +14,9 @@ console.log("-11"< 0);
 console.log(null<0);
 console.log(null>=0);
 console.log(null==0);
-
+/* (==) (===) lets talk about this two 
+(==) this sign is called as loose equality will do type coersion and its not much prefered as it will convert both operands to the same type before making the comparisions while 
+(===) its a strict equality sign and it checks both type and value*/
 console.log(undefined==0);
 console.log(undefined<=0);
 console.log(undefined>=0);
